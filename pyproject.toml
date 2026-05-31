@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "versyn"
-version = "0.2.1"
+version = "0.2.2"
 description = "Cryptographic proof for AI actions — sign AI decisions with Ed25519, verify offline with hash binding."
 readme = "README.md"
 requires-python = ">=3.9"

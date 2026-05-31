@@ -17,7 +17,7 @@ from ._exceptions import (
     VersynRateLimitError,
 )
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 __all__ = [
     "VersynClient", "register", "offline_verify", "local_hash", "canonical_json",
     "VERSYN_PUBKEY_B64", "KEY_ID", "VersynError", "VersynAuthError",

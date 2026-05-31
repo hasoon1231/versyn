@@ -21,7 +21,7 @@ from ._queue import OfflineQueue
 __all__ = ["VersynClient"]
 
 _DEFAULT_BASE = "https://api.versyn.dev"
-_USER_AGENT = "versyn-python/0.2.0"
+_USER_AGENT = "versyn-python/0.2.2"
 
 
 class VersynClient:

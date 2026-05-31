@@ -1,6 +1,6 @@
 # versyn
 
-**Cryptographic proof for AI decisions.** Sign every AI decision with Ed25519, verify it offline against a pinned public key. 100% coverage, zero per-check cost. Trust the math, not a server.
+**Cryptographic proof for AI decisions.** Sign every AI decision with Ed25519, verify it offline against a pinned public key. Signing goes through the API; verification is local and free. 100% verification coverage, zero per-check cost.
 
 ```bash
 pip install versyn
@@ -10,7 +10,7 @@ pip install versyn
 
 Most AI-monitoring tools audit decisions by sending each one to *another* large model to judge it. That costs money per check, so teams sample — they audit 1% and hope the other 99% was fine. Every un-audited decision is a blind spot a regulator or a lawsuit can walk into.
 
-versyn removes that tax. Each decision gets an Ed25519-signed certificate computed locally. Verification is a signature check on your own machine — no external model call, no per-check fee. You can certify **100%** of decisions instead of a sample, at effectively zero marginal cost.
+versyn removes that tax. Each decision is signed via the Versyn API (the event is sent to be signed). Verification, by contrast, is a signature check on your own machine — no server call, no external model, no per-check fee. You can certify **100%** of decisions instead of a sample, at effectively zero marginal cost.
 
 ## Verify a decision offline
 
